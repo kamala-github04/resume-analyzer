@@ -1,0 +1,139 @@
+/* 🌈 Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #5f6caf, #7f53ac);
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* 🧊 Glass Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  color: white;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Inputs */
+textarea {
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* Grid */
+.grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.grid .card {
+  flex: 1;
+  min-width: 160px;
+  text-align: center;
+}
+
+/* 📊 Progress Bar */
+.progress {
+  background: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 28px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 28px;
+  transition: width 1s ease-in-out;
+}
+
+/* 🎯 Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #00f260;
+  color: black;
+  font-weight: bold;
+}
+
+/* ❌ Missing skills */
+.missing {
+  color: #ff4b2b;
+}
+
+/* 💡 Suggestions */
+.suggestions li {
+  margin: 6px 0;
+}
+
+/* 🚀 Job Cards */
+.job {
+  background: rgba(255,255,255,0.25);
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+/* 🧠 Skill Tags */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: rgba(255,255,255,0.25);
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+}
