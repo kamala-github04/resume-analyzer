@@ -27,7 +27,7 @@ function App() {
     try {
       setLoading(true);
       const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/analyze`,
+        "https://resume-analyzer-production-8fa5.up.railway.app/analyze",
         formData
       );
       setResult(res.data);
