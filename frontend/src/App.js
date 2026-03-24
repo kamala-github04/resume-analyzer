@@ -26,7 +26,10 @@ function App() {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://127.0.0.1:5000/analyze", formData);
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/analyze`,
+        formData
+      );
       setResult(res.data);
     } catch (err) {
       alert("Error connecting backend");
