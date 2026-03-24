@@ -22,6 +22,10 @@ from utils import (
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/", methods=["GET"])
+def home():
+    return "Resume Analyzer API is running 🚀"
+
 
 # ==========================================
 # MAIN API ROUTE
