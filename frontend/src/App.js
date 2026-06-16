@@ -27,7 +27,7 @@ function App() {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://resume-analyzer-production-8fa5.up.railway.app/analyze",
+        "https://resume-analyzer-1-kxxu.onrender.com/analyze",
         formData
       );
       setResult(res.data);
