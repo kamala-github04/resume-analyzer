@@ -176,7 +176,7 @@ The system provides:
 ### Analysis Results
 
 ![Analysis Results](screenshots/result.png)
-
+ 
 ---
 
 ## 🚀 Deploy on Render
