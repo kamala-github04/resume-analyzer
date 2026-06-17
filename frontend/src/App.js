@@ -27,7 +27,7 @@ function App() {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://resume-analyzer-production-8fa5.up.railway.app/analyze",
+        "http://127.0.0.1:8080/analyze",
         formData
       );
       setResult(res.data);

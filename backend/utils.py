@@ -9,8 +9,11 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Download stopwords (first time only)
-nltk.download('stopwords')
+# Download only if missing
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
 
 # ==========================================
@@ -106,7 +109,7 @@ def extract_skills(text):
             found_skills[category] = list(set(found))
 
     # Handle MERN
-    if "mern" in text:
+    if "mern" in text or "mern stack" in text:
         if "web" not in found_skills:
             found_skills["web"] = []
 
@@ -162,13 +165,25 @@ def get_missing_skills(resume_skills, jd_skills):
 skill_equivalence = {
     "mysql": "sql",
     "oracle": "sql",
-    "postgresql": "sql"
+    "postgresql": "sql",
+
+    "reactjs": "react",
+    "nodejs": "node",
+
+    "ml": "machine learning",
+    "ai": "artificial intelligence"
 }
 
 skill_synonyms = {
     "team collaboration": "teamwork",
     "working in team": "teamwork",
-    "collaborated": "teamwork"
+    "collaborated": "teamwork",
+
+    "mern stack": "mern",
+    "api development": "node",
+    "backend development": "node",
+    "version control": "git",
+    "data analysis": "pandas"
 }
 
 

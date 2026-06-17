@@ -76,12 +76,12 @@ def analyze():
         # ================================
         skill_score = calculate_skill_match(resume_skills_mapped, jd_skills)
 
-        resume_text_for_match = clean_text
+        resume_text_for_match = " ".join(resume_skills_mapped)
         jd_text_for_match = " ".join(jd_skills)
 
         tfidf_score = calculate_similarity(resume_text_for_match, jd_text_for_match)
 
-        final_score = round((0.7 * skill_score) + (0.3 * tfidf_score), 2)
+        final_score = round((0.8 * skill_score) +(0.2 * tfidf_score),2)
 
         # ================================
         # 7. MISSING SKILLS
