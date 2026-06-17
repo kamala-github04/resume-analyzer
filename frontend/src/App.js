@@ -27,7 +27,7 @@ function App() {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://127.0.0.1:8080/analyze",
+        "https://resume-analyzer-1-kxxu.onrender.com",
         formData
       );
       setResult(res.data);
