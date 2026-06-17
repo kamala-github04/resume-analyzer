@@ -236,7 +236,7 @@ REACT_APP_API_URL=<your-backend-url>
 
 B.Tech Information Technology
 
-GitHub: https://github.com/kamala-github04
+GitHub: @kamala-github04
 
 ---
 
